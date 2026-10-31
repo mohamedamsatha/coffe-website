@@ -24,4 +24,4 @@ jobs:
           password: ${{ secrets.DOCKETHUB_TOKEN }}
 
       - name: Push Docker Image
-        run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/aurelia:latest
+        run: docker push ${{ secrets.DOCKETHUB_USERNAME }}/aurelia:latest
