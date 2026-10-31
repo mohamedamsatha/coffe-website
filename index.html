@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,12 +14,25 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="announcement"><span>Freshly brewed, thoughtfully made.</span><span class="announcement-right">Open daily · 8:00 AM — 10:00 PM</span></div>
+  <div class="announcement">
+    <span>Freshly brewed, thoughtfully made. | CI/CD TEST v2 🚀</span>
+    <span class="announcement-right">Open daily · 8:00 AM — 10:00 PM</span>
+  </div>
+
   <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="Café Aurelia home"><span class="brand-mark">☕</span><span>Café <i>Aurelia</i></span></a>
-    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <a class="brand" href="#top" aria-label="Café Aurelia home">
+      <span class="brand-mark">☕</span>
+      <span>Café <i>Aurelia</i></span>
+    </a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span>
+    </button>
     <nav class="main-nav" aria-label="Main navigation">
-      <a class="active" href="#top">Home</a><a href="#story">Our Story</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#visit">Visit Us</a>
+      <a class="active" href="#top">Home</a>
+      <a href="#story">Our Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#visit">Visit Us</a>
     </nav>
     <a class="header-cta" href="#visit">Find a Table <span>↗</span></a>
   </header>
@@ -31,16 +45,34 @@
         <p class="eyebrow"><span></span> YOUR NEIGHBOURHOOD COFFEE HOUSE</p>
         <h1>Good coffee.<br><em>Better days.</em></h1>
         <p class="hero-copy">Slow down, sip something wonderful, and stay awhile. Your favourite corner of the day is waiting.</p>
-        <div class="hero-actions"><a class="button button-gold" href="#menu">Explore the menu <span>↗</span></a><a class="button button-ghost" href="#story">Get to know us</a></div>
-        <div class="hero-note"><span class="note-line"></span><span>Made with care. Served with warmth.</span></div>
+        <div class="hero-actions">
+          <a class="button button-gold" href="#menu">Explore the menu <span>↗</span></a>
+          <a class="button button-ghost" href="#story">Get to know us</a>
+        </div>
+        <div class="hero-note">
+          <span class="note-line"></span>
+          <span>Made with care. Served with warmth.</span>
+        </div>
       </div>
-      <div class="hero-bottom page-width"><span>EST. 2021 · BREWED WITH HEART</span><span class="scroll-cue">SCROLL TO EXPLORE <b>↓</b></span></div>
+      <div class="hero-bottom page-width">
+        <span>EST. 2021 · BREWED WITH HEART</span>
+        <span class="scroll-cue">SCROLL TO EXPLORE <b>↓</b></span>
+      </div>
     </section>
 
     <section class="promise-strip">
-      <div class="promise"><span class="promise-icon">✳</span><div><h3>Thoughtful ingredients</h3><p>Fresh, local, seasonal.</p></div></div>
-      <div class="promise"><span class="promise-icon">☕</span><div><h3>Beautifully brewed</h3><p>Every cup has a story.</p></div></div>
-      <div class="promise"><span class="promise-icon">♡</span><div><h3>Room to reconnect</h3><p>Come as you are.</p></div></div>
+      <div class="promise">
+        <span class="promise-icon">✳</span>
+        <div><h3>Thoughtful ingredients</h3><p>Fresh, local, seasonal.</p></div>
+      </div>
+      <div class="promise">
+        <span class="promise-icon">☕</span>
+        <div><h3>Beautifully brewed</h3><p>Every cup has a story.</p></div>
+      </div>
+      <div class="promise">
+        <span class="promise-icon">♡</span>
+        <div><h3>Room to reconnect</h3><p>Come as you are.</p></div>
+      </div>
     </section>
 
     <section class="menu-section section-pad" id="menu">
@@ -50,28 +82,103 @@
         <p>From your first morning espresso to that just-one-more dessert.</p>
       </div>
       <div class="menu-filters" role="group" aria-label="Filter menu items">
-        <button class="filter active" data-filter="all">Everything</button><button class="filter" data-filter="coffee">Coffee</button><button class="filter" data-filter="coolers">Coolers</button><button class="filter" data-filter="bites">Food & sweets</button>
+        <button class="filter active" data-filter="all">Everything</button>
+        <button class="filter" data-filter="coffee">Coffee</button>
+        <button class="filter" data-filter="coolers">Coolers</button>
+        <button class="filter" data-filter="bites">Food & sweets</button>
       </div>
       <div class="menu-grid">
-        <article class="menu-card" data-category="coffee"><div class="food-image food-one"><span class="tag">HOUSE FAVOURITE</span><button class="add-button" aria-label="Add Cappuccino to order" data-name="Cappuccino" data-price="3.50">+</button></div><div class="food-details"><div><h3>Velvet Cappuccino</h3><p>Double espresso · silky milk</p></div><strong>$3.50</strong></div></article>
-        <article class="menu-card" data-category="coffee"><div class="food-image food-two"><button class="add-button" aria-label="Add Iced Latte to order" data-name="Iced Latte" data-price="4.00">+</button></div><div class="food-details"><div><h3>Brown Sugar Iced Latte</h3><p>Espresso · oat milk · brown sugar</p></div><strong>$4.00</strong></div></article>
-        <article class="menu-card" data-category="bites"><div class="food-image food-three"><button class="add-button" aria-label="Add Chocolate Cake to order" data-name="Chocolate Cake" data-price="5.00">+</button></div><div class="food-details"><div><h3>Midnight Chocolate Cake</h3><p>Dark chocolate · berry compote</p></div><strong>$5.00</strong></div></article>
-        <article class="menu-card" data-category="bites"><div class="food-image food-four"><button class="add-button" aria-label="Add Café Toastie to order" data-name="Café Toastie" data-price="6.50">+</button></div><div class="food-details"><div><h3>Garden Café Toastie</h3><p>Sourdough · greens · melted cheese</p></div><strong>$6.50</strong></div></article>
-        <article class="menu-card" data-category="bites"><div class="food-image food-five"><button class="add-button" aria-label="Add Creamy Pasta to order" data-name="Creamy Pasta" data-price="7.50">+</button></div><div class="food-details"><div><h3>Sunday Creamy Pasta</h3><p>Herbs · parmesan · seasonal greens</p></div><strong>$7.50</strong></div></article>
-        <article class="menu-card" data-category="coolers"><div class="food-image food-six"><button class="add-button" aria-label="Add Berry Cooler to order" data-name="Berry Cooler" data-price="4.50">+</button></div><div class="food-details"><div><h3>Wild Berry Cooler</h3><p>Fresh berries · yoghurt · honey</p></div><strong>$4.50</strong></div></article>
+        <article class="menu-card" data-category="coffee">
+          <div class="food-image food-one">
+            <span class="tag">HOUSE FAVOURITE</span>
+            <button class="add-button" aria-label="Add Cappuccino to order" data-name="Cappuccino" data-price="3.50">+</button>
+          </div>
+          <div class="food-details">
+            <div><h3>Velvet Cappuccino</h3><p>Double espresso · silky milk</p></div>
+            <strong>$3.50</strong>
+          </div>
+        </article>
+        <article class="menu-card" data-category="coffee">
+          <div class="food-image food-two">
+            <button class="add-button" aria-label="Add Iced Latte to order" data-name="Iced Latte" data-price="4.00">+</button>
+          </div>
+          <div class="food-details">
+            <div><h3>Brown Sugar Iced Latte</h3><p>Espresso · oat milk · brown sugar</p></div>
+            <strong>$4.00</strong>
+          </div>
+        </article>
+        <article class="menu-card" data-category="bites">
+          <div class="food-image food-three">
+            <button class="add-button" aria-label="Add Chocolate Cake to order" data-name="Chocolate Cake" data-price="5.00">+</button>
+          </div>
+          <div class="food-details">
+            <div><h3>Midnight Chocolate Cake</h3><p>Dark chocolate · berry compote</p></div>
+            <strong>$5.00</strong>
+          </div>
+        </article>
+        <article class="menu-card" data-category="bites">
+          <div class="food-image food-four">
+            <button class="add-button" aria-label="Add Café Toastie to order" data-name="Café Toastie" data-price="6.50">+</button>
+          </div>
+          <div class="food-details">
+            <div><h3>Garden Café Toastie</h3><p>Sourdough · greens · melted cheese</p></div>
+            <strong>$6.50</strong>
+          </div>
+        </article>
+        <article class="menu-card" data-category="bites">
+          <div class="food-image food-five">
+            <button class="add-button" aria-label="Add Creamy Pasta to order" data-name="Creamy Pasta" data-price="7.50">+</button>
+          </div>
+          <div class="food-details">
+            <div><h3>Sunday Creamy Pasta</h3><p>Herbs · parmesan · seasonal greens</p></div>
+            <strong>$7.50</strong>
+          </div>
+        </article>
+        <article class="menu-card" data-category="coolers">
+          <div class="food-image food-six">
+            <button class="add-button" aria-label="Add Berry Cooler to order" data-name="Berry Cooler" data-price="4.50">+</button>
+          </div>
+          <div class="food-details">
+            <div><h3>Wild Berry Cooler</h3><p>Fresh berries · yoghurt · honey</p></div>
+            <strong>$4.50</strong>
+          </div>
+        </article>
       </div>
-      <div class="menu-foot"><span>GOOD THINGS TAKE A LITTLE TIME.</span><a class="text-link" href="#visit">View the full menu <span>↗</span></a></div>
+      <div class="menu-foot">
+        <span>GOOD THINGS TAKE A LITTLE TIME.</span>
+        <a class="text-link" href="#visit">View the full menu <span>↗</span></a>
+      </div>
     </section>
 
     <section class="story-section section-pad" id="story">
-      <div class="story-photo"><img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1200&q=85" alt="Cosy café interior with warm lights" loading="lazy"><div class="photo-caption"><span>YOUR TABLE IS WAITING</span><span>✳</span></div></div>
-      <div class="story-copy"><p class="eyebrow"><span></span> A PLACE TO PAUSE</p><h2>More than coffee.<br><em>A feeling.</em></h2><p>We believe the best moments are often the simplest: a familiar face, a warm cup, a conversation that runs a little longer than planned.</p><p>That’s why we made Café Aurelia a place to settle in, find your rhythm, and make an ordinary day feel a little special.</p><a class="button button-gold" href="#visit">Come say hello <span>↗</span></a><div class="handwritten">Stay a little longer <span>♡</span></div></div>
+      <div class="story-photo">
+        <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1200&q=85" alt="Cosy café interior with warm lights" loading="lazy">
+        <div class="photo-caption"><span>YOUR TABLE IS WAITING</span><span>✳</span></div>
+      </div>
+      <div class="story-copy">
+        <p class="eyebrow"><span></span> A PLACE TO PAUSE</p>
+        <h2>More than coffee.<br><em>A feeling.</em></h2>
+        <p>We believe the best moments are often the simplest: a familiar face, a warm cup, a conversation that runs a little longer than planned.</p>
+        <p>That’s why we made Café Aurelia a place to settle in, find your rhythm, and make an ordinary day feel a little special.</p>
+        <a class="button button-gold" href="#visit">Come say hello <span>↗</span></a>
+        <div class="handwritten">Stay a little longer <span>♡</span></div>
+      </div>
     </section>
 
-    <section class="quote-band"><span class="quote-mark">“</span><p>Life happens. Coffee helps.</p><span class="quote-credit">— THE AURELIA WAY</span></section>
+    <section class="quote-band">
+      <span class="quote-mark">“</span>
+      <p>Life happens. Coffee helps.</p>
+      <span class="quote-credit">— THE AURELIA WAY</span>
+    </section>
 
     <section class="gallery-section section-pad" id="gallery">
-      <div class="gallery-heading"><div><p class="eyebrow eyebrow-dark"><span></span> LITTLE MOMENTS, BIG FEELINGS</p><h2>A peek inside <em>our world.</em></h2></div><p>Come for the coffee. Stay for the atmosphere.</p></div>
+      <div class="gallery-heading">
+        <div>
+          <p class="eyebrow eyebrow-dark"><span></span> LITTLE MOMENTS, BIG FEELINGS</p>
+          <h2>A peek inside <em>our world.</em></h2>
+        </div>
+        <p>Come for the coffee. Stay for the atmosphere.</p>
+      </div>
       <div class="gallery-grid">
         <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=85" alt="Freshly poured coffee on a table" loading="lazy">
         <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=900&q=85" alt="Inviting café seating" loading="lazy">
@@ -81,15 +188,40 @@
     </section>
 
     <section class="visit-section" id="visit">
-      <div class="visit-content page-width"><div><p class="eyebrow"><span></span> YOUR NEXT FAVOURITE SPOT</p><h2>Come on in.<br><em>We saved you a seat.</em></h2><p>Whether it’s a quick coffee, a slow brunch, or a little treat for yourself, we’ll have something good waiting.</p></div>
-        <div class="visit-card"><div class="visit-row"><span>FIND US</span><p>12 Market Lane, Your City</p></div><div class="visit-row"><span>OPEN EVERY DAY</span><p>8:00 AM — 10:00 PM</p></div><div class="visit-row"><span>SAY HELLO</span><p>hello@cafeaurelia.example</p></div><a class="button button-gold" href="mailto:hello@cafeaurelia.example?subject=Hello%20Caf%C3%A9%20Aurelia">Get in touch <span>↗</span></a></div>
+      <div class="visit-content page-width">
+        <div>
+          <p class="eyebrow"><span></span> YOUR NEXT FAVOURITE SPOT</p>
+          <h2>Come on in.<br><em>We saved you a seat.</em></h2>
+          <p>Whether it’s a quick coffee, a slow brunch, or a little treat for yourself, we’ll have something good waiting.</p>
+        </div>
+        <div class="visit-card">
+          <div class="visit-row"><span>FIND US</span><p>12 Market Lane, Your City</p></div>
+          <div class="visit-row"><span>OPEN EVERY DAY</span><p>8:00 AM — 10:00 PM</p></div>
+          <div class="visit-row"><span>SAY HELLO</span><p>hello@cafeaurelia.example</p></div>
+          <a class="button button-gold" href="mailto:hello@cafeaurelia.example?subject=Hello%20Caf%C3%A9%20Aurelia">Get in touch <span>↗</span></a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer"><a class="brand" href="#top"><span class="brand-mark">☕</span><span>Café <i>Aurelia</i></span></a><p>Good coffee. Better days. Always.</p><div class="footer-links"><a href="#menu">Menu</a><a href="#story">Our story</a><a href="#gallery">Gallery</a><a href="#visit">Contact</a></div><small>© <span id="year"></span> Café Aurelia. Made with care.</small></footer>
+  <footer class="footer">
+    <a class="brand" href="#top"><span class="brand-mark">☕</span><span>Café <i>Aurelia</i></span></a>
+    <p>Good coffee. Better days. Always.</p>
+    <div class="footer-links">
+      <a href="#menu">Menu</a>
+      <a href="#story">Our story</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#visit">Contact</a>
+    </div>
+    <small>© <span id="year"></span> Café Aurelia. Made with care.</small>
+  </footer>
 
-  <div class="cart-toast" role="status" aria-live="polite"><span class="toast-icon">✓</span><span class="toast-message">Added to your order</span><button class="toast-close" aria-label="Dismiss notification">×</button></div>
+  <div class="cart-toast" role="status" aria-live="polite">
+    <span class="toast-icon">✓</span>
+    <span class="toast-message">Added to your order</span>
+    <button class="toast-close" aria-label="Dismiss notification">×</button>
+  </div>
   <button class="back-to-top" aria-label="Back to top">↑</button>
 </body>
 </html>
+```
